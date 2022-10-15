@@ -1,11 +1,10 @@
-module.exports = function(config) {
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addWatchTarget("./src/scss/");
 
-  config.addPassthroughCopy("src/js");
-  return  {
+  return {
     dir: {
       input: "src",
-      output: "dist"
-    }
+      output: "public",
+    },
   };
-
 };

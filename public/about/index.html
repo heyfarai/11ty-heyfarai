@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ title }}</title>
+	<title>About this page for you</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <script type="application/ld+json">
@@ -19,14 +19,22 @@
         ]
       }
     </script>
-	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+	<link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
 	<header>
-		<h1>{{ title }}</h1>
+		<h1>About this page for you</h1>
 	</header>
 	<main>
-	{{ content | safe }}
+	
+<div class="container">
+  <h1>This page is really for you!</h1>
+  <p>It was made for you using HTML, CSS and JavaScript. And served as a JAMStack site.</p>
+</div>
+
+
+
+
 	</main>
 </body>
 </html>
