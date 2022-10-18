@@ -3,10 +3,80 @@ title: A page for you
 layout: base.njk
 ---
 
-<div class="container">
-  <h1>This is a page for you</h1>
-  <div class="vibe">You are great!</div>
-  <div class="love">
-    Hey
-  </div>
-</div>
+    <section class="section--with-grid section--no-padding-top section--wide-content section--intro">
+      <div class="section-heading">
+        {# <h1 class="low-top">What should you say in a <a title="What is a 1:1 meeting?" href="#1:1">1:1</a>?</h1> #}
+        <h1 class="low-top">Peace!</h1>
+      </div>
+      <div class="section-content ">
+        <p class="intro-blurb">
+          I'm Farai. I <a href="#coaching">coach</a> managers, <a
+            <a href="#speaking">speak</a>, and write, about how to have 1:1 meetings that unblock career progress.
+        </p>
+      </div>
+    </section>
+      {# {%- for post in collections.posts -%}
+        <article class="article--with-grid">
+            <div class="article-heading">
+              <h3>{{ post.data.title }}</h3>
+            </div>
+            <div class="article-content">{{ post.templateContent | safe }}</div>
+        </article>
+      {%- endfor -%} #}
+    <section id="coaching" class="section--with-grid">
+      <h2 class="section-heading">Coaching</h2>
+      <div class="section-content ">
+      <p>I work with new and emerging leaders around the world to increase their people leadership skillset and develop effective, inclusive practices that make them better at people stuff.</p>
+      <br>
+      <p>Ready to get <i>Good at people stuff?</i> <br><a href="https://calendly.com/farai/coaching-intro">Book a coaching call with me </a>&rarr;</p>
+      </div>
+    </section>
+
+    {# <section id="workshops" class="section--with-grid">
+      <h2 class="section-heading">Workshops &amp; Training</h2>
+      <div class="section-content ">
+      <p>I work with new and emerging leaders around the world to increase their people leadership skillset and develop effective, inclusive practices that make them better at people stuff.</p>
+      <br>
+      <p>Ready to get <i>Good at people stuff?</i> <br><a href="https://calendly.com/farai/coaching-intro">Book a coaching call with me </a>&rarr;</p>
+      </div>
+    </section> #}
+
+      <section id="speaking" class="section--with-grid">
+        <h2 class="section-heading">Speaking</h2>
+        <div class="section-content ">
+          <p>I speak around the world and online. These days I'm focussed on talking about
+          <strong>working effectively in multicultural teams</strong>. If you’d like me to speak at a public or private
+          event, catch me on
+          <strong>farai (at) pixelup.co.za</strong>.</p>
+            <br>
+            <div>
+              <h3>Video of my talk at
+                <a href="https://2019.leadingdesignconf.com/newyork">Leading Design 2019 (New York) </a>
+              </h3>
+              <br>
+              <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe title="talk-video" src="https://player.vimeo.com/video/350720470?title=0&byline=0&portrait=0"
+                  style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                  webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"
+                  allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+              <!-- <div class="video"> <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe title="talk-video" src="https://www.youtube.com/embed/IWS9K_rxmOY?rel=0" frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media"></iframe></div> </div> -->
+              <br>
+            </div>
+            <div>
+                  <ul>
+                        {% for appearance in speakingAppearance %}
+                    <li class="item-appearance">
+                      <a href="{{ appearance.url }}">{{ appearance.eventName }}</a><br />
+                      <span>{{ appearance.talk }} </span>
+                      <br />
+                      <span class="grey">
+                        {{ appearance.eventDate }} — {{ appearance.place }}</span
+                      >
+                    </li>
+                    {% endfor %}  
+                    </ul>
+            </div>
+        </div>
+      </section>

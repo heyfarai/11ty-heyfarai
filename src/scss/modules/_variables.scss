@@ -1,15 +1,15 @@
 // Text colours. British English.
-$greenColour: #0bb051 !default;
+$greenColour: #06ae00 !default;
 $redColour: #ff1935 !default;
 
+$primaryColour: $greenColour;
 $headingColour: #222222 !default;
 $bodyColour: #222222 !default;
-$linkColour: $greenColour;
-$hoverColour: #444444 !default;
+$linkColour: $bodyColour;
+$hoverColour: $primaryColour !default;
 $captionColour: #bdc8cc !default;
 $white: #ffffff !default;
 $black: #222222 !default;
-$primaryColour: $greenColour;
 $grey: #383838 !default;
 
 // Background colours.
