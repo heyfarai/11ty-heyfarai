@@ -3,7 +3,7 @@ title: A page for you
 layout: base.njk
 ---
 
-    <section class="section--with-grid section--no-padding-top section--wide-content section--intro">
+    <section class="section--with-grid section--with-subcontent section--no-padding-top section--wide-content section--intro">
       <div class="section-heading">
         {# <h1 class="low-top">What should you say in a <a title="What is a 1:1 meeting?" href="#1:1">1:1</a>?</h1> #}
         <h1 class="low-top">Peace!</h1>
@@ -14,6 +14,24 @@ layout: base.njk
             <a href="#speaking">speak</a>, and write, about how to have 1:1 meetings that unblock career progress.
         </p>
       </div>
+      {# <div class="section-subcontent">
+        <div id="revue-embed">
+          <form action="http://what-to-say.heyfarai.com/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+          <div class="revue-form-group">
+            <label for="member_email">Email address</label>
+            <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+          </div>
+          <div class="revue-form-group">
+            <label for="member_first_name">First name</label>
+            <input class="revue-form-field" placeholder="First name." type="text" name="member[first_name]" id="member_first_name">
+          </div>
+          <div class="revue-form-actions">
+            <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+          </div>
+          <div class="revue-form-footer">Email <a target="_blank" href="https://www.getrevue.co/terms">Terms</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy</a>.</div>
+          </form>
+        </div>
+      </div> #}
     </section>
       {# {%- for post in collections.posts -%}
         <article class="article--with-grid">
@@ -66,7 +84,7 @@ layout: base.njk
             </div>
             <div>
                   <ul class="item-appearance-list">
-                        {% for appearance in speakingAppearance %}
+                    {% for appearance in speakingAppearance %}
                     <li class="item-appearance">
                       <a href="{{ appearance.url }}">{{ appearance.eventName }}</a><br />
                       <span>{{ appearance.talk }} </span>

@@ -43,6 +43,9 @@
   }
   &.section--wide-content {
     grid-template-areas: "header header" "content content";
+    &.section--with-subcontent {
+      grid-template-areas: "header header" "content content" ". sub-content";
+    }
   }
   &.section--intro {
     margin-top: -50px;
@@ -59,6 +62,9 @@
 .section-content,
 .article-content {
   grid-area: content;
+}
+.section-subcontent {
+  grid-area: sub-content;
 }
 .home-header {
   margin: 0;
