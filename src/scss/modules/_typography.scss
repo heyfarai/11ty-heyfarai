@@ -292,6 +292,10 @@ small {
 
 .caption {
   color: $captionColour;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: -0.6rem;
+  font-size: 1rem;
 }
 
 // Quotes.
