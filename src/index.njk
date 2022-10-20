@@ -37,14 +37,14 @@ layout: base.njk
                                                                 </div>
                                                               </div> #}
 </section>
-{%- for post in collections.posts -%}
+{# {%- for post in collections.posts -%}
   <article class="article--with-grid">
     <div class="article-heading">
       <h3>{{ post.data.title }}</h3>
     </div>
     <div class="article-content">{{ post.templateContent | safe }}</div>
   </article>
-{%- endfor -%}
+{%- endfor -%} #}
 <section id="coaching" class="section--with-grid">
   <h2 class="section-heading">Coaching</h2>
   <div class="section-content ">
