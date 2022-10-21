@@ -1,1 +1,9 @@
 {% extends "base.njk" %}
+<section class="section--with-grid  section--no-padding-top section--wide-content ">
+    <div class="section-heading">
+        <h1 class="low-top">{{ title }}</h1>
+    </div>
+    <div class="section-content ">
+        {{ content | safe }}
+    </div>
+</section>

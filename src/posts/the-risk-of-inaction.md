@@ -1,7 +1,7 @@
 ---
 title: The risk of inaction
 tags: posts
-layout: post.njk
+layout: article.njk
 date: Last Modified
 ---
 

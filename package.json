@@ -16,7 +16,8 @@
   "author": "Farai Madzima <farai@hey.com>",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "eleventy-plugin-reading-time": "^0.0.1"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^1.2.0",
