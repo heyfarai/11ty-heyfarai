@@ -1,11 +1,11 @@
 ---
 title: Elevate to excellence
 tags: posts
-layout: post.njk
+layout: article.njk
 date: Last Modified
 ---
 
-The optic nerve dominates.
+# The optic nerve dominates.
 
 It’s piped directly into our brains and uses a lot of processing power to help us discern the world through vision.
 
