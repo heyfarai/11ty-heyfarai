@@ -19,7 +19,13 @@ collections:
           format: "YYYY-MM-DD",
           required: false,
         }
-      - { label: "intro", name: "intro", widget: "string", required: false }
+      - {
+          label: "layout",
+          name: "layout",
+          widget: "string",
+          default: "article.njk",
+          required: false,
+        }
       - {
           label: "canonical",
           name: "canonical",

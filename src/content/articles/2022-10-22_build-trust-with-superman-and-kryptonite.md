@@ -6,5 +6,7 @@ permalink: articles/build-trust-with-superman-and-kryptonite
 tags:
   - posts
   - trust
+layout: article.njk
 ---
+
 I don't trust my manager yet.
