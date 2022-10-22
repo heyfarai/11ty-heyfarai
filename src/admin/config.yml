@@ -5,7 +5,7 @@ media_folder: "dist/img"
 public_folder: "/img"
 collections:
   - name: "HeyFarai"
-    label: "HeyFarai Articles"
+    label: "Articles"
     folder: "src/content/articles"
     create: true
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
