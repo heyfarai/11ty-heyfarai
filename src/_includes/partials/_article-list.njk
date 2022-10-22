@@ -2,7 +2,7 @@
 {%- for post in collections.posts -%}
     <li class="list-item--space-between">
         <a class="article-link" href="{{ post.url | url }}">{{ post.data.title }}</a>
-        <time class="article-date caption">{{ post.date | formatDate('MMMM D, YYYY')  }}</time>
+        <time class="article-date caption">{{ post.date | formatDate('MMM D, YYYY')  }}</time>
     </li>
 {%- endfor -%}
 </ul>
