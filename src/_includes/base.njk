@@ -2,19 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>People management coach and trainer — Farai Madzima</title>
+    <title>{{ meta.siteTitle }} — {{ meta.authorName.firstName }} {{ meta.authorName.lastName }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Eleventy v1.0.2">
-    <meta property="og:title" content="Coach and trainer for people managers — Farai Madzima"/>
-    <meta name="description" content="Farai Madzima levels up people managers through his coaching and workshops.
-      ">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <meta name="description" content="{{ meta.siteDescription }}">
+    
     <meta property="og:type" content="website"/>
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="@{{ meta.twitterHandle }}">
+    <meta property="twitter:creator" content="@{{ meta.twitterHandle }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" property="twitter:title" content="{{ meta.siteTitle }} — {{ meta.authorName.fullName }}">
+    <meta property="og:url" content="https://{{ meta.siteUrl }}/">
+    <meta property="og:site_name" content="{{ meta.authorName.fullName }}">
+    <meta property="og:title" content="{{ meta.siteTitle }}">
+    <meta property="og:image" property="twitter:image" name="image" content="https://{{ meta.siteUrl }}/img/smiley-farai-madzima-3-4.jpg">
+    <meta property="og:description" property="twitter:description" content="{{ meta.siteTitle }}">
+
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script type="application/ld+json">
-      { "@context": "http://schema.org", "@type": "Person", "name": "Farai Madzima", "url": "http://faraimadzima.com",
-      "sameAs": [ "http://instagram.com/farai", "http://www.linkedin.com/in/farai", "http://twitter.com/heyfarai" ] }
-    </script>
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
+    <link rel="canonical" href="https://{{ meta.siteUrl}}/" />
   </head>
   <body>
     <div class="errythang-grid" id="the-beginning">
@@ -38,7 +47,7 @@
           <ul class="item-appearance-list">
             <li>
               I tweet sometimes
-              <a href="https://twitter.com/heyfarai">@heyfarai</a>
+              <a href="https://twitter.com/{{ meta.twitterHandle }}">@{{ meta.twitterHandle }}</a>
             </li>
             <li>
               You can email me: farai {at} hey.com
@@ -51,12 +60,12 @@
       {
         "@context" : "http://schema.org",
         "@type" : "Person",
-        "name" : "Farai Madzima",
-        "url" : "http://heyfarai.com",
+        "name" : "{{ meta.authorFullName }}",
+        "url" : "https://{{ meta.siteDomain }}",
         "homeLocation": "Ottawa, Canada",
         "sameAs" : [
-          "https://twitter.com/heyfarai",
-          "https://www.linkedin.com/in/farai/"
+          "https://twitter.com/{{ meta.twitterHandle }}",
+          "{{ meta.linkedinUrl }}"
         ]
       }
     </script>

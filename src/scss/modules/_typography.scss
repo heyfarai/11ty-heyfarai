@@ -342,7 +342,9 @@ pre {
 code {
   line-height: 1rem;
 }
-
+.no-wrap {
+  white-space: nowrap;
+}
 // Letter space those capitals people, Jan Tschichold would be proud.
 .upper {
   font-kerning: normal;
