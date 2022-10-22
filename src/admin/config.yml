@@ -6,7 +6,7 @@ public_folder: "/img"
 collections:
   - name: "HeyFarai"
     label: "HeyFarai Articles"
-    folder: "content/articles"
+    folder: "src/content/articles"
     create: true
     slug: "---"
     fields:
