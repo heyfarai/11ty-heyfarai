@@ -8,7 +8,7 @@ collections:
     label: "HeyFarai Articles"
     folder: "src/content/articles"
     create: true
-    slug: "---"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
       - { label: "title", name: "title", widget: "string" }
       - { label: "date", name: "date", widget: "date", format: "YYYY-MM-DD" }
@@ -19,7 +19,7 @@ collections:
           format: "YYYY-MM-DD",
           required: false,
         }
-      - { label: "intro", name: "intro", widget: "string" }
+      - { label: "intro", name: "intro", widget: "string", required: false }
       - {
           label: "canonical",
           name: "canonical",
