@@ -9,5 +9,5 @@ module.exports = {
   authorName: { firstName: "Farai", lastName: "Madzima" },
   authorFullName: "Farai Madzima",
   twitterHandle: "heyfarai",
-  linkedinUrl: "https://www.linkedin.com/in/farai/",
+  linkedinUrl: "https://linkedin.com/in/farai/",
 };
