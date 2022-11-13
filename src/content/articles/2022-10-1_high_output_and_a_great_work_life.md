@@ -8,15 +8,15 @@ tags:
   - trust
 ---
 
-Hey, People Manager (a.k.a. Professional People Person),
+Peace, People Manager (a.k.a. Professional People Person),
 
-Each week I have 1hr 1:1s with Every1 who reports to me. How do you schedule your 1:1s? Hit reply, let me know.
+Each week I have hour-long [1:1 meetings]("/articles/what-is-a-1:1") with [Every1]("/articles/Every1") who reports to me. How do you schedule your 1:1s? Hit reply, let me know.
 
-Have you heard of Andy Grove (1922-1992)? He was employee number 3 and long-time CEO at Intel. We have him to thank (or not) for OKRs. Not to mention the computer chips.
+Have you heard of [Andy Grove]("https://en.wikipedia.org/wiki/Andrew_Grove")? He was employee number 3 and long-time CEO at Intel. We have him to thank (or not) for OKRs. Not to mention the computer chips.
 
-Andy wrote High Output Management, a bestseller and favorite among tech leaders. In it, he popularised the idea of 1:1 meetings.
+Andy wrote [High Output Management](""), a bestseller and favorite among tech heavies like Bob. In it, he popularised the idea of 1:1 meetings.
 
-"Ninety minutes of your time can enhance the quality of your subordinate's work for two weeks.”
+> "Ninety minutes of your time can enhance the quality of your subordinate's work for two weeks.”
 
 Invest the right amount of time into your team so that you can get more out of your team. It sense makes. It also reeks of outdated industrial workplace vibes.
 
@@ -26,7 +26,8 @@ This makes you, People Manager, accountable for getting high output from your te
 
 It does bug me though, that Grove leaves out what we need to do to meet the needs of the people who report to us. If a 1:1 is for their benefit, it must encompass more than what they need to increase output.
 
-What do these needs look like? Check out Paloma Medina's BICEPS model of peoples' needs.
+What do these needs look like? Check out [Paloma Medina's BICEPS model]()of peoples' needs.
+
 **B**elonging
 **I**mprovement
 **C**hoice
@@ -42,10 +43,12 @@ People won't leave because their manager didn’t get them to operate at their p
 
 Let’s build on Andy’s idea 👇🏾
 
-\*_"Ninety minutes_ of your time can enhance the quality of work-life experience and performance of your subordinate's Every1 who reports to you work for two weeks.”
+> "Ninety minutes\* of your time can enhance the quality of work-life experience and performance of your subordinate's Every1 who reports to you work for two weeks.”
 
-Our job is to work with Every1 who reports to us to remove impediments and co-create the conditions for optimum on-the-job performance, optimum work-life experience, and optimum career progress.
+Our job is to work with Every1 who reports to us to remove impediments and co-create the conditions for **optimum on-the-job performance**, **optimum work-life experience**, and **optimum career progress**.
 
-The 1:1 meeting is that place to do the work.
+The 1:1 meeting is that place to do the work. Let's do it.
 
-P.S. I don't have 90 minute 1:1's every 2 weeks. I wish I could. I default to 60 minutes a week. I'll grudgingly accept 30 minutes. No less. How long and how often do you do your 1:1s? Hit reply, let me know.
+Peace
+
+_P.S. I don't have 90 minute 1:1's every 2 weeks. I wish I could. I default to 60 minutes a week. I'll grudgingly accept 30 minutes. No less. How long and how often do you do your 1:1s? Hit reply, let me know._

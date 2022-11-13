@@ -29,18 +29,9 @@ body {
 
 // Links.
 a {
-  color: $linkColour;
-  text-decoration: none;
-  transition: color 0.1s, background-color 0.1s;
-  outline: 0;
-  transition: all 0.1s ease-out;
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: $hoverColour;
-    text-decoration: none;
-  }
+  color: $primaryColour;
+  // text-decoration: none;
+  display: inline;
 }
 
 // Styles for typeset text.
@@ -48,21 +39,16 @@ a {
 h1 a,
 p a,
 li a {
-  box-shadow: inset 0 -0.9em 0 0 $primaryColour;
-  color: $black;
-  // display: inline;
-  // text-decoration: none;
   transition: 0.3s ease;
+  transition-property: all;
   transition-property: color, box-shadow, opacity;
-
+  outline: 0;
+  // box-shadow: inset 0 -0.1em 0 0 $primaryColour;
   &:hover,
   &:active,
   &:focus {
-    box-shadow: inset 0 -0.9em 0 0 $primaryColour;
-    color: $black;
-  }
-  @media screen and (min-width: 27em) {
-    box-shadow: inset 0 -0.9em 0 0 $primaryColour;
+    color: $bodyColour;
+    // box-shadow: inset 0 -0.9em 0 0 $primaryColour;
   }
 }
 
@@ -306,6 +292,13 @@ small {
 
 // Quotes.
 blockquote {
+  padding-left: 1rem;
+  border-left: 6px solid $bodyColour;
+  @extend .bold;
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 // Horizontal rule.
