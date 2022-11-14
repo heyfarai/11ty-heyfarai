@@ -7,5 +7,5 @@ permalink: articles/creating-a-thinking-environment.html
 tags:
   - posts
   - listening
+draft: true
 ---
-The better you listen, the better I think.

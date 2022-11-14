@@ -20,6 +20,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("formatDate", formatDate);
 
   // START COLLECTING RIGHT HERE
+
+  // Published articles collection
+  const now = new Date();
+  const publishedPosts = (post) => post.date <= now && !post.data.draft;
+  eleventyConfig.addCollection("posts", (collection) => {
+    return collection
+      .getFilteredByGlob("./src/content/articles/*.md")
+      .filter(publishedPosts);
+  });
+
   eleventyConfig.addCollection("appearancesByYear", function (collectionApi) {
     const allAppearances = collectionApi.getAll()[0].data.speakingAppearance;
     let appearances = allAppearances,
