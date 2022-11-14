@@ -2,7 +2,9 @@
 {%- for post in collections.posts -%}
     {% if page.url != post.url %}
     <li class="article-list-item list-item--space-between">
-        <a class="article-link" href="{{ post.url | url }}">{{ post.data.title }}</a>
+        <span>
+            <a class="article-link" href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </span>
         <time class="article-date  no-wrap">{{ post.date | formatDate('MMM D, YYYY')  }}</time>
     </li>
     {% endif %}

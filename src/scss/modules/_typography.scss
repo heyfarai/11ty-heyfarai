@@ -25,12 +25,14 @@ body {
   line-height: 1.5em;
   font-weight: 450;
   font-variation-settings: "wght" 450;
+  color: var(--color-bodyText);
+  background: var(--color-background);
 }
 
 // Links.
 a {
-  color: $primaryColour;
-  // text-decoration: none;
+  color: var(--color-bodyText);
+  text-decoration: none;
   display: inline;
 }
 
@@ -43,12 +45,12 @@ li a {
   transition-property: all;
   transition-property: color, box-shadow, opacity;
   outline: 0;
-  // box-shadow: inset 0 -0.1em 0 0 $primaryColour;
+  box-shadow: inset 0 -0.1em 0 0 $primaryColour;
   &:hover,
   &:active,
   &:focus {
-    color: $bodyColour;
-    // box-shadow: inset 0 -0.9em 0 0 $primaryColour;
+    color: var(--color-hover);
+    box-shadow: inset 0 -0.5em 0 0 $primaryColour;
   }
 }
 
@@ -67,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $headingColour;
+  color: var(--color-bodyText);
   letter-spacing: -1.5px;
   font-weight: bold;
   font-weight: 575;
@@ -76,7 +78,7 @@ h6 {
 
 // Heading level 1.
 h1 {
-  color: $black;
+  color: var(--color-bodyText);
   font-size: clamp(34px, 8vw, 30px);
   line-height: 1em;
   max-width: 25ch;
@@ -293,7 +295,7 @@ small {
 // Quotes.
 blockquote {
   padding-left: 1rem;
-  border-left: 6px solid $bodyColour;
+  border-left: 6px solid var(--color-bodyText);
   @extend .bold;
   p {
     margin: 0;
