@@ -92,15 +92,15 @@ h1 {
   }
   @media only screen and (min-width: 600px) {
     font-size: clamp(30px, 8vw, 40px);
+    &.low-top {
+      margin-top: 0;
+      &.article-heading {
+        margin-top: -3rem;
+      }
+    }
   }
   @media only screen and (min-width: 1000px) {
     font-size: clamp(30px, 8vw, 50px);
-  }
-  &.low-top {
-    margin-top: 0;
-    &.article-heading {
-      margin-top: -3rem;
-    }
   }
   &.no-bottom {
     margin-bottom: 0;
