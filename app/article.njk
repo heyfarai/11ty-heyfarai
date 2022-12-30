@@ -1,16 +1,23 @@
 ---
 layout: base.njk
----
+pagination:
+  data: articles
+  size: 1
+  alias: article
+  addAllPagesToCollections: true
+permalink: 'articles/{{ article.title | slugify }}/'
+tags: article
 
+---
 <article class="section--with-grid  section--no-padding-top ">
     <div class="section-heading">
-        <h1 class="low-top article-heading no-bottom">{{ title }}</h1>
+        <h1 class="low-top article-heading no-bottom">{{ article.title }}</h1>
         {# <span class="caption">Articles / Feedback</span> #}
     </div>
     <div class="article-content ">
-        <span class="caption">{{ content | readingTime }} reading time</span>
-        {{ content | safe }}
-        <p class="caption">{{ page.date | formatDate('MMMM D, YYYY') }}</p>
+        <span class="caption">{{ article.content | readingTime }} reading time</span>
+        {{ article.content | md | safe }}
+        <p class="caption">{{ article.publishedAt | formatDate('MMMM D, YYYY') }}</p>
     </div>
 </article>
 <section class="section--with-grid  ">

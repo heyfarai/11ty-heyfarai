@@ -1,0 +1,12 @@
+<ul class="article-list no-bullet">
+{%- for article in collections.article -%}
+    {% if page.url != article.url %}
+    <li class="article-list-item list-item--space-between">
+        <span>
+            <a class="article-link" href="{{ article.url | url }}">{{ article.data.article.title }}</a>
+        </span>
+        <time class="article-date  no-wrap">{{ article.data.article.publishedAt | formatDate('MMM D, YYYY')  }}</time>
+    </li>
+    {% endif %}
+{%- endfor -%}
+</ul>

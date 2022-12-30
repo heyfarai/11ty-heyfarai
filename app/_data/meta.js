@@ -10,4 +10,5 @@ module.exports = {
   authorFullName: "Farai Madzima",
   twitterHandle: "heyfarai",
   linkedinUrl: "https://linkedin.com/in/farai/",
+  themeColour: "#5200ffe6",
 };

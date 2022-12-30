@@ -1,4 +1,6 @@
 const fs = require("fs");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const markdownIt = require("./app/filters/markdown.js");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const dayjs = require("dayjs");
@@ -7,27 +9,33 @@ module.exports = function (eleventyConfig) {
   // PLUGINS galore
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(readingTime);
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   // SASS and ASSETS
-  eleventyConfig.addWatchTarget("./src/scss/");
-  eleventyConfig.addPassthroughCopy("./src/fonts");
-  eleventyConfig.addPassthroughCopy("./src/img");
-  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
-  eleventyConfig.addPassthroughCopy("./src/admin");
+  eleventyConfig.addWatchTarget("./app/scss/");
+  eleventyConfig.addPassthroughCopy("./app/fonts");
+  eleventyConfig.addPassthroughCopy("./app/img");
+  eleventyConfig.addPassthroughCopy("./app/admin");
 
   // FILTERS GO HERE
   const formatDate = (date, format) => dayjs(date).format(format);
   eleventyConfig.addFilter("formatDate", formatDate);
 
+  const md = (string) => {
+    const content = markdownIt.render(string);
+    return `<div>${content}</div>`;
+  };
+  eleventyConfig.addFilter("md", md);
+
   // START COLLECTING RIGHT HERE
 
   // Published articles collection
   const now = new Date();
-  const publishedPosts = (post) => post.date <= now && !post.data.draft;
+  const isPublished = (post) => post.date <= now && !post.data.draft;
   eleventyConfig.addCollection("posts", (collection) => {
     return collection
-      .getFilteredByGlob("./src/content/articles/*.md")
-      .filter(publishedPosts);
+      .getFilteredByGlob("./app/content/articles/*.md")
+      .filter(isPublished);
   });
 
   eleventyConfig.addCollection("appearancesByYear", function (collectionApi) {
@@ -94,7 +102,7 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input: "src",
+      input: "app",
       output: "dist",
     },
   };

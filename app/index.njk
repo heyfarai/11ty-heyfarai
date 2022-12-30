@@ -1,6 +1,11 @@
 ---
 title: A page for you
 layout: base.njk
+pagination:
+  data: articles
+  size: 100
+  alias: articles
+
 ---
 
 <section class="section--with-grid section--with-subcontent section--no-padding-top section--wide-content section--intro">
@@ -19,29 +24,14 @@ layout: base.njk
       and write, about how to have 1:1 meetings that unblock career progress.
     </p>
   </div>
-  {# <div class="section-subcontent">
-                                                                                          <div id="revue-embed">
-                                                                                            <form action="http://what-to-say.heyfarai.com/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
-                                                                                            <div class="revue-form-group">
-                                                                                              <label for="member_email">Email address</label>
-                                                                                              <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
-                                                                                            </div>
-                                                                                            <div class="revue-form-group">
-                                                                                              <label for="member_first_name">First name</label>
-                                                                                              <input class="revue-form-field" placeholder="First name." type="text" name="member[first_name]" id="member_first_name">
-                                                                                            </div>
-                                                                                            <div class="revue-form-actions">
-                                                                                              <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
-                                                                                            </div>
-                                                                                            <div class="revue-form-footer">Email <a target="_blank" href="https://www.getrevue.co/terms">Terms</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy</a>.</div>
-                                                                                            </form>
-                                                                                          </div>
-                                                                                        </div> #}
 </section>
 <section id="articles" class="section--with-grid">
   <h2 class="section-heading">Articles</h2>
   <div class="section-content">
-  {% include "partials/_article-list.njk" %}
+  <ul class="article-list no-bullet">
+    {% include "partials/_article-list.njk" %}
+
+</ul>
   </div>
 </section>
 <section id="coaching" class="section--with-grid">
