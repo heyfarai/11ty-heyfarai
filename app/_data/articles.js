@@ -1,6 +1,6 @@
 const { default: axios } = require("axios");
 const slugify = require("../filters/slugify");
-const url = "http://localhost:1337/graphql";
+const url = process.env.BACKEND_URL;
 
 module.exports = async () => {
   const body = {

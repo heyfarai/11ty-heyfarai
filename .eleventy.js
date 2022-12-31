@@ -1,3 +1,4 @@
+require("dotenv").config();
 const fs = require("fs");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const markdownIt = require("./app/filters/markdown.js");
