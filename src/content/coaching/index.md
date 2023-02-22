@@ -8,9 +8,9 @@ title: Coaching
 section: coaching
 ---
 
-<section class="section--with-grid  section--no-padding-top section--wide-content">
+<section class="section--with-grid  section--wide-content">
     <div class="section-heading">
-        <h1 class="low-top article-heading no-bottom">Coaching</h1>
+        <h1 class="low-top ">Coaching</h1>
     </div>
   <div class="section-content ">
     <p class="intro-blurb">
