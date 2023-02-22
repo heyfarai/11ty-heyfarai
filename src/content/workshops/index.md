@@ -5,6 +5,7 @@ eleventyNavigation:
   order: 3
 permalink: "workshops/"
 title: Workshops
+section: workshops
 ---
 
 <section class="section--with-grid  section--no-padding-top section--wide-content">

@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
     <link rel="canonical" href="https://{{ meta.siteUrl}}/" />
   </head>
-  <body>
+  <body class="section-{{ section }}">
     <div class="errythang-grid" id="the-beginning">
       <div class="avatar-wrapper">
         <a href="/#the-beginning">
@@ -39,12 +39,12 @@
       <nav>
         <ul>
           <li>
-            <a class="item-link_nav nav-field-guide" href="/coaching"><span class="no-wrap">Coaching</span></a>
+            <a class="item-link_nav nav-coaching" href="/coaching"><span class="no-wrap">Coaching</span></a>
           </li>
           
           {# <li><a class="item-link_nav" href="/workshops">Workshops</a></li> #}
-          <li><a class="item-link_nav" href="../#speaking">Speaking</a></li>
-          <li><a class="item-link_nav" href="#get-in-touch">Contact</a></li>
+          <li><a class="item-link_nav nav-speaking" href="../#speaking">Speaking</a></li>
+          <li><a class="item-link_nav nav-contact" href="#get-in-touch">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -72,7 +72,7 @@
       </section>
     </div>
     <div class="footer">
-      <p>&copy; 2017 — 2022 Farai Madzima.</p>
+      <p>&copy; 2017 — 2023 Farai Madzima.</p>
       
     </div>
     <script type="application/ld+json">

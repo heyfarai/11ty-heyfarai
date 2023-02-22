@@ -5,6 +5,7 @@ eleventyNavigation:
   order: 3
 permalink: "coaching/"
 title: Coaching
+section: coaching
 ---
 
 <section class="section--with-grid  section--no-padding-top section--wide-content">
