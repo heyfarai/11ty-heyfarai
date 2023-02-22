@@ -36,27 +36,37 @@
             src="/img/smiley-farai-madzima-3-4--tn.jpg">
         </a>
       </div>
+      <nav>
+        <ul>
+          <li>
+            <a class="item-link_nav nav-field-guide" href="/coaching"><span class="no-wrap">Coaching</span></a>
+          </li>
+          
+          {# <li><a class="item-link_nav" href="/workshops">Workshops</a></li> #}
+          <li><a class="item-link_nav" href="../#speaking">Speaking</a></li>
+          <li><a class="item-link_nav" href="#get-in-touch">Contact</a></li>
+        </ul>
+      </nav>
     </div>
     <main class="errythang-grid">
       {{ content | safe }}
     </main>
     <div class="errythang-grid">
-      <section class="section--with-grid">
+      <section id="get-in-touch" class="section--with-grid">
         <h2 class="section-heading">Peace!</h2>
         <div class="section-content">
           <p>Get in touch to chat about coaching for you or your team. If you're organising an event, let's chat about a talk or a workshop.</p>
           <ul class="no-bullet">
             <li>
-              <strong>Email me</strong>: farai {at} hey.com
-            </li>
-            {# <li>
-              LinkedIn:
+              <strong>Email me:</strong> farai {at} hey.com
+            </li><li>
+              <strong>LinkedIn:</strong>
               <a href="{{ meta.linkedinUrl }}">{{ meta.linkedinUrl }}</a>
             </li>
             <li>
-              Twitter:
+              <strong>Twitter:</strong>
               <a href="https://twitter.com/{{ meta.twitterHandle }}">@{{ meta.twitterHandle }}</a>
-            </li> #}
+            </li> 
           </ul>
         </div> 
       </section>
