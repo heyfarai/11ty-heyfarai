@@ -114,14 +114,14 @@ h2 {
   max-width: 25ch;
   font-weight: 600;
   font-variation-settings: "wght" 600;
-  margin-bottom: calc(0.5em + 1vh);
+  margin-bottom: calc(1em + 1vh);
   transition: 0.5s;
   @media only screen and (min-width: 600px) {
     font-size: clamp(30px, 8vw, 40px);
   }
   @media only screen and (min-width: 1000px) {
     font-size: clamp(30px, 8vw, 50px);
-    margin-top: calc(0.5em + 1vh);
+    margin-top: calc(1em + 1vh);
   }
 }
 
