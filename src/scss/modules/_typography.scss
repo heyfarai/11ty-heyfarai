@@ -45,12 +45,12 @@ li a {
   transition-property: all;
   transition-property: color, box-shadow, opacity;
   outline: 0;
-  box-shadow: inset 0 -0.1em 0 0 $primaryColour;
+  box-shadow: inset 0 -0.55em 0 0 $primaryColour;
   &:hover,
   &:active,
   &:focus {
     color: var(--color-hover);
-    box-shadow: inset 0 -0.5em 0 0 $primaryColour;
+    box-shadow: inset 0 -0.1em 0 0 $primaryColour;
   }
 }
 
