@@ -16,9 +16,9 @@ section: coaching
     <p class="intro-blurb">
       Feeling stuck, unsure, or challenged in your role as a <a href="#for-people-managers">people manager</a>? Coaching brings clarity and unblocks progress for you and your people. 
     </p>
-    <br><a class="link--button" href="https://calendly.com/farai/coaching-intro">Book your free coaching intro call
-      </a>
-    
+    <br>
+    {% include "partials/_calendly-button.njk" %}
+
   </div>
   </section>
   <section id="articles" class="section--with-grid">
@@ -33,8 +33,7 @@ section: coaching
     <p>I have 20 years experience building and leading inclusive teams across 3 continents and several industries. I ask incisive questions and pay attention to what's coming up for you. I hold a mirror up to seen and unseen beliefs, excuses, and "reasons" that might stand in the way of you making progress.
     </p>
     <p><br>Are you ready?</p>
-    <a class="link--button" href="https://calendly.com/farai/coaching-intro">Book your free coaching intro call
-    </a>
+    {% include "partials/_calendly-button.njk" %}
   </div>
 </section>
 <section id="for-people-managers" class="section--with-grid">
@@ -58,8 +57,7 @@ section: coaching
       <li>Setting goals and intended outcomes</li>
     </ul>
     <p><br>So, are you ready?</p>
-    <a class="link--button" href="https://calendly.com/farai/coaching-intro">Book your free coaching intro call
-    </a>
+    {% include "partials/_calendly-button.njk" %}
   </div>
 </section>
 
