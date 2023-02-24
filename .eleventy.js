@@ -16,8 +16,21 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/admin");
 
   // FILTERS GO HERE
+
   const formatDate = (date, format) => dayjs(date).format(format);
   eleventyConfig.addFilter("formatDate", formatDate);
+
+  //{{ meta.siteTitle }} — {{ meta.authorName.firstName }} {{ meta.authorName.lastName }}
+  const makePageTitle = (title) => {
+    let pageTitle = "";
+    if (title) {
+      pageTitle = `${title} | Farai Madzima`;
+    } else {
+      pageTitle = "Farai Madzima | Coach and trainer for people managers";
+    }
+    return pageTitle;
+  };
+  eleventyConfig.addFilter("makePageTitle", makePageTitle);
 
   // START COLLECTING RIGHT HERE
 

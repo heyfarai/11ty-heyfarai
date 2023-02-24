@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>{{ meta.siteTitle }} — {{ meta.authorName.firstName }} {{ meta.authorName.lastName }}</title>
+    <title>{{ title | makePageTitle }} </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Eleventy v1.0.2">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -21,7 +21,6 @@
     <meta property="og:image" property="twitter:image" name="image" content="https://{{ meta.siteUrl }}/img/smiley-farai-madzima-3-4.jpg">
     <meta property="og:description" property="twitter:description" content="{{ meta.siteTitle }}">
 
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
     <link rel="canonical" href="https://{{ meta.siteUrl}}/" />
   </head>
@@ -88,17 +87,6 @@
           "https://twitter.com/{{ meta.twitterHandle }}",
           "{{ meta.linkedinUrl }}"
         ]
-      }
-    </script>
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
       }
     </script>
   </body>
