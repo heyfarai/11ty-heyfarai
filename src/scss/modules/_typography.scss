@@ -21,26 +21,19 @@ html {
 body {
   font-family: "Figtree", sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: clamp(22px, 3.5vw, 30px);
+  font-size: clamp(22px, 3.5vw, 26px);
   line-height: 1.5em;
   font-weight: 450;
   font-variation-settings: "wght" 450;
+  color: var(--color-bodyText);
+  background: var(--color-background);
 }
 
 // Links.
 a {
-  color: $linkColour;
+  color: var(--color-bodyText);
   text-decoration: none;
-  transition: color 0.1s, background-color 0.1s;
-  outline: 0;
-  transition: all 0.1s ease-out;
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: $hoverColour;
-    text-decoration: none;
-  }
+  display: inline;
 }
 
 // Styles for typeset text.
@@ -48,29 +41,25 @@ a {
 h1 a,
 p a,
 li a {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 50%,
-    $primaryColour 50%
-  );
-  background-position: 0 93%;
-  background-repeat: repeat-x;
-  background-size: 100% 2rem;
-
+  transition: 0.3s ease;
+  transition-property: all;
+  transition-property: color, box-shadow, opacity;
+  outline: 0;
+  box-shadow: inset 0 -0.1em 0 0 $primaryColour;
   &:hover,
   &:active,
   &:focus {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 100%,
-      $grey 50%
-    );
+    color: var(--color-hover);
+    box-shadow: inset 0 -0.5em 0 0 $primaryColour;
   }
 }
 
 // Paragraphs. OpenType ligatures and oldstyle figures enabled if available.
 p {
   margin-bottom: 1.618rem;
+}
+.article-content p {
+  margin-bottom: 3rem;
 }
 
 // Headings. OpenType ligatures, discretionary ligatures and lining figures enabled if available.
@@ -80,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $headingColour;
+  color: var(--color-bodyText);
   letter-spacing: -1.5px;
   font-weight: bold;
   font-weight: 575;
@@ -89,7 +78,7 @@ h6 {
 
 // Heading level 1.
 h1 {
-  color: $black;
+  color: var(--color-bodyText);
   font-size: clamp(34px, 8vw, 30px);
   line-height: 1em;
   max-width: 25ch;
@@ -109,6 +98,12 @@ h1 {
   }
   &.low-top {
     margin-top: 0;
+    &.article-heading {
+      margin-top: -3rem;
+    }
+  }
+  &.no-bottom {
+    margin-bottom: 0;
   }
 }
 
@@ -165,6 +160,9 @@ ol {
       margin-left: 2rem;
     }
   }
+  &.no-bullet {
+    list-style-type: none;
+  }
 }
 
 // Ordered lists.
@@ -198,9 +196,6 @@ ol {
             }
           }
         }
-      }
-      &.no-bullet {
-        list-style-type: none;
       }
     }
 
@@ -294,12 +289,18 @@ small {
   color: $captionColour;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-top: -0.6rem;
   font-size: 1rem;
 }
 
 // Quotes.
 blockquote {
+  padding-left: 1rem;
+  border-left: 6px solid var(--color-bodyText);
+  @extend .bold;
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 // Horizontal rule.
@@ -337,7 +338,9 @@ pre {
 code {
   line-height: 1rem;
 }
-
+.no-wrap {
+  white-space: nowrap;
+}
 // Letter space those capitals people, Jan Tschichold would be proud.
 .upper {
   font-kerning: normal;

@@ -1,17 +1,35 @@
+const fs = require("fs");
+
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const dayjs = require("dayjs");
+const readingTime = require("eleventy-plugin-reading-time");
 module.exports = function (eleventyConfig) {
+  // PLUGINS galore
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(readingTime);
+
+  // SASS and ASSETS
   eleventyConfig.addWatchTarget("./src/scss/");
   eleventyConfig.addPassthroughCopy("./src/fonts");
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("./src/admin");
 
   // FILTERS GO HERE
   const formatDate = (date, format) => dayjs(date).format(format);
   eleventyConfig.addFilter("formatDate", formatDate);
 
   // START COLLECTING RIGHT HERE
+
+  // Published articles collection
+  const now = new Date();
+  const publishedPosts = (post) => post.date <= now && !post.data.draft;
+  eleventyConfig.addCollection("posts", (collection) => {
+    return collection
+      .getFilteredByGlob("./src/content/articles/*.md")
+      .filter(publishedPosts);
+  });
+
   eleventyConfig.addCollection("appearancesByYear", function (collectionApi) {
     const allAppearances = collectionApi.getAll()[0].data.speakingAppearance;
     let appearances = allAppearances,
@@ -55,6 +73,25 @@ module.exports = function (eleventyConfig) {
         .reverse()
     );
   });
+
+  // Override Browsersync defaults (used only with --serve)
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function (err, browserSync) {
+        const content_404 = fs.readFileSync("dist/404.html");
+
+        browserSync.addMiddleware("*", (req, res) => {
+          // Provides the 404 content without redirect.
+          res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
+          res.write(content_404);
+          res.end();
+        });
+      },
+    },
+    ui: false,
+    ghostMode: false,
+  });
+
   return {
     dir: {
       input: "src",

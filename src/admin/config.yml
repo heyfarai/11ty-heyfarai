@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: articles
+media_folder: "dist/img"
+public_folder: "/img"
+collections:
+  - name: "HeyFarai"
+    label: "Articles"
+    folder: "src/content/articles"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "date", name: "date", widget: "date", format: "YYYY-MM-DD" }
+      - {
+          label: "updated",
+          name: "updated",
+          widget: "date",
+          format: "YYYY-MM-DD",
+          required: false,
+        }
+      - {
+          label: "layout",
+          name: "layout",
+          widget: "string",
+          default: "article.njk",
+          required: false,
+        }
+      - {
+          label: "canonical",
+          name: "canonical",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "publication",
+          name: "publication",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "permalink",
+          name: "permalink",
+          widget: "string",
+          required: false,
+        }
+      - { label: "tags", name: "tags", widget: "list" }
+      - { label: "body", name: "body", widget: "markdown" }

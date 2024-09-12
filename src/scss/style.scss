@@ -9,13 +9,9 @@
 @import "modules/variables";
 @import "modules/typography";
 @import "modules/nav";
-@import "modules/sections";
+@import "modules/grids";
 @import "modules/avatar";
-@import "modules/blog";
-
-body {
-  background-color: $lightBackgroundColor;
-}
+@import "modules/article";
 
 .firstcharacter {
   font-size: 1.7rem;
@@ -77,5 +73,14 @@ body {
   }
   @media only screen and (min-width: 1000px) {
     font-size: clamp(30px, 8vw, 50px);
+  }
+}
+.footer {
+  text-align: right;
+  font-size: 0.618em;
+  margin-top: 8vh;
+  padding: 40px 40px 20px;
+  @media only screen and (min-width: 600px) {
+    padding: 50px 50px 20px;
   }
 }

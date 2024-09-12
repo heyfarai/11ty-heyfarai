@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+
+<article class="section--with-grid  section--no-padding-top ">
+    <div class="section-heading">
+        <h1 class="low-top article-heading no-bottom">{{ title }}</h1>
+        {# <span class="caption">Articles / Feedback</span> #}
+    </div>
+    <div class="article-content ">
+        <span class="caption">{{ content | readingTime }} reading time</span>
+        {{ content | safe }}
+        <p class="caption">{{ page.date | formatDate('MMMM D, YYYY') }}</p>
+    </div>
+</article>
+<section class="section--with-grid  ">
+    <div class="section-heading">
+        <h1 class="low-top article-heading">More articles</h1>
+    </div>
+    <div class="article-content ">
+    {% include "partials/_article-list.njk" %}
+    </div>
+</section>

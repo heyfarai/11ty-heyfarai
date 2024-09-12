@@ -1,0 +1,21 @@
+---
+layout: base.njk
+permalink: 404.html
+eleventyExcludeFromCollections: true
+---
+
+<section class="section--with-grid  section--no-padding-top ">
+    <div class="section-heading">
+        <h1 class="low-top article-heading no-bottom">I can't find that page</h1>
+        <span class="caption">Something went a bit wonky</span>
+    </div>
+</section>
+
+<section class="section--with-grid  ">
+    <div class="section-heading">
+        <h1 class="low-top article-heading">Why not try?</h1>
+    </div>
+    <div class="section-content ">
+    {% include "partials/_article-list.njk" %}
+    </div>
+</section>

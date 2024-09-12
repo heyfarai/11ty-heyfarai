@@ -28,13 +28,14 @@
   grid-column: 1/4;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "header header" ". content";
+  grid-template-areas: "header header" "content content";
   margin-bottom: 5vh;
   padding-top: 6.5vh;
   @media only screen and (min-width: 600px) {
     grid-column: 2/4;
   }
   @media only screen and (min-width: 800px) {
+    grid-template-areas: "header header" ". content";
     grid-column: 2/3;
     grid-template-columns: 1fr minmax(500px, 700px);
   }
@@ -62,6 +63,9 @@
 .section-content,
 .article-content {
   grid-area: content;
+}
+.article-content {
+  margin-top: 3em;
 }
 .section-subcontent {
   grid-area: sub-content;

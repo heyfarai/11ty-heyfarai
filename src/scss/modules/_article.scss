@@ -1,0 +1,16 @@
+.article-list-item {
+  line-height: 1em;
+  margin-bottom: 1.2em;
+}
+.article-link {
+  line-height: 1em;
+  // background-image: none;
+}
+.article-date {
+  font-size: 0.5em;
+  text-transform: uppercase;
+}
+.list-item--space-between {
+  display: flex;
+  justify-content: space-between;
+}

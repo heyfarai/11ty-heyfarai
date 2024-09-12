@@ -5,7 +5,87 @@
   box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,11 +94,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -30,7 +121,8 @@ blockquote {
   quotes: none;
 }
 
-blockquote:before, blockquote:after {
+blockquote:before,
+blockquote:after {
   content: "";
   content: none;
 }
@@ -40,7 +132,9 @@ table {
   border-spacing: 0;
 }
 
-caption, th, td {
+caption,
+th,
+td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
@@ -75,24 +169,37 @@ a {
   outline: 0;
   transition: all 0.1s ease-out;
 }
-a:hover, a:active, a:focus {
+a:hover,
+a:active,
+a:focus {
   color: #919191;
   text-decoration: none;
 }
 
 p a,
 li a {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #0bb051 50%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    #0bb051 50%
+  );
   background-position: 0 93%;
   background-repeat: repeat-x;
   background-size: 100% 0.25rem;
-  text-shadow: 0.1rem 0 #fdfdfd, 0.15rem 0 #fdfdfd, -0.1rem 0 #fdfdfd, -0.15rem 0 #fdfdfd;
+  text-shadow: 0.1rem 0 #fdfdfd, 0.15rem 0 #fdfdfd, -0.1rem 0 #fdfdfd,
+    -0.15rem 0 #fdfdfd;
 }
-p a:hover, p a:active, p a:focus,
+p a:hover,
+p a:active,
+p a:focus,
 li a:hover,
 li a:active,
 li a:focus {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 100%, #383838 50%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 100%,
+    #383838 50%
+  );
 }
 
 h1,
@@ -252,7 +359,11 @@ small {
 }
 
 hr {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #bdc8cc 50%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    #bdc8cc 50%
+  );
   background-position: 0 50%;
   background-repeat: repeat-x;
   background-size: 100% 0.15rem;
@@ -353,7 +464,9 @@ code {
   display: block;
   padding: 10px 3%;
 }
-.main-nav li a:hover, .main-nav li a:active, .main-nav li a:focus,
+.main-nav li a:hover,
+.main-nav li a:active,
+.main-nav li a:focus,
 .main-nav li span:hover,
 .main-nav li span:active,
 .main-nav li span:focus {
@@ -559,4 +672,6 @@ h1.post__header {
   list-style-type: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+.footer {
+  padding: 40px;
+}
