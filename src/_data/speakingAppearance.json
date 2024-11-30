@@ -1,5 +1,21 @@
 [
   {
+    "eventName": "Leading Design 2023",
+    "place": "San Francisco, USA",
+    "talk": "What to say in 1:1 meetings",
+    "eventDate": "2023-02-07",
+    "role": "Speaker",
+    "url": "https://canux.io/farai-madzima/"
+  },
+  {
+    "eventName": "IA Conference - Keynote",
+    "place": "New Orleans, USA",
+    "talk": "Deep care doesn't scale. It happens 1:1.",
+    "eventDate": "2023-03-28",
+    "role": "Keynote",
+    "url": "https://www.theiaconference.com/sessions/2023-keynote-farai-madzima/"
+  },
+  {
     "eventName": "CanUX",
     "place": "Ottawa, Canada",
     "talk": "The Only One of Your Kind in the Room: Perils and Opportunities",
